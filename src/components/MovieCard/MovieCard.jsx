@@ -12,7 +12,7 @@ export const MovieCard = ({ title, description, imdbUrl, imgUrl }) => (
       <div className="media">
         <div className="media-left">
           <figure className="image is-48x48">
-            <img src={imdbUrl} alt="imdb" />
+            <img src="public/images/imdb-logo.jpeg" alt="imdb" />
           </figure>
         </div>
 
@@ -26,7 +26,7 @@ export const MovieCard = ({ title, description, imdbUrl, imgUrl }) => (
       <div className="content">
         <p data-cy="MovieDescription">{description}</p>
 
-        <a href="https://www.imdb.com/title/tt1375666" data-cy="MovieLink">
+        <a href={imdbUrl} data-cy="MovieLink">
           IMDB
         </a>
       </div>
